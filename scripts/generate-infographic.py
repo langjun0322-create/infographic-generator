@@ -5,27 +5,65 @@
 
 import sys
 import subprocess
+import os
 from datetime import datetime
 from pathlib import Path
+
+# 当前脚本所在目录
+SCRIPT_DIR = Path(__file__).parent.parent
 
 # Nano Banana Pro 脚本路径
 NANO_BANANA_SCRIPT = Path.home() / ".openclaw/workspace/skills/nano-banana-pro/scripts/generate_image.py"
 
+# 配置脚本路径
+SETUP_SCRIPT = SCRIPT_DIR / "scripts" / "setup-config.py"
+
+
+def check_config():
+    """检查配置，首次使用时引导用户配置"""
+    config_file = SCRIPT_DIR / "CONFIG.md"
+    
+    # 检查环境变量
+    if not os.environ.get("GEMINI_API_KEY"):
+        print("⚠️  首次使用检测：GEMINI_API_KEY 未配置")
+        print()
+        
+        # 检查配置脚本是否存在
+        if SETUP_SCRIPT.exists():
+            print("🚀 启动配置向导...")
+            subprocess.run([sys.executable, str(SETUP_SCRIPT)])
+            
+            # 重新检查环境变量
+            if not os.environ.get("GEMINI_API_KEY"):
+                print("\n❌ 配置未完成，无法继续")
+                print("📖 请查看 CONFIG.md 了解详细配置步骤")
+                sys.exit(1)
+        else:
+            print("📖 请查看 CONFIG.md 了解配置步骤")
+            sys.exit(1)
+    
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    masked_key = f"{api_key[:10]}...{api_key[-5:]}" if len(api_key) > 15 else "***"
+    print(f"✅ API 配置就绪：{masked_key}")
+
 
 def check_dependencies():
     """检查依赖是否就绪"""
+    # 先检查配置
+    check_config()
+    
+    # 检查 uv
     result = subprocess.run(["command", "-v", "uv"], capture_output=True)
     if result.returncode != 0:
         print("❌ 错误：uv 未安装")
+        print("💡 安装命令：curl -LsSf https://astral.sh/uv/install.sh | sh")
         sys.exit(1)
     
+    # 检查 Nano Banana Pro 脚本
     if not NANO_BANANA_SCRIPT.exists():
         print(f"❌ 错误：Nano Banana Pro 脚本不存在")
-        sys.exit(1)
-    
-    import os
-    if not os.environ.get("GEMINI_API_KEY"):
-        print("⚠️  GEMINI_API_KEY 未设置")
+        print(f"   路径：{NANO_BANANA_SCRIPT}")
+        print("💡 请先安装 Nano Banana Pro skill")
         sys.exit(1)
 
 
