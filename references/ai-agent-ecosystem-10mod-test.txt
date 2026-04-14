@@ -1,0 +1,51 @@
+Create a highly chaotic, high-density, AUTHENTICALLY HAND-DRAWN Sketchnote style information guide on weathered, textured grid paper about "AI AGENT ECOSYSTEM 2026".
+
+=== CRITICAL VISUAL SYSTEM (MARKER & INK LOGIC) ===
+
+【COLOR PALETTE & TEXTURE】
+- BACKGROUND: Messy grid paper with ink splatters and smudges
+- INK: Charcoal Black (#1A1A1A) with raw marker texture
+- ACCENT: Vibrant Safety Orange (#FF7000) for highlights and arrows
+
+【MAIN TITLE + SUBTITLE EFFECT】
+- Main: "AI AGENT ECOSYSTEM" - thick black marker over orange background + WHITE FINE-LINER tracing inside letters
+- Subtitle: "Complete Landscape Guide 2026" - SAME white fine-liner effect
+
+【LAYOUT】
+- 10 MODULES with NO coordinate labels (pure organic chaos)
+- Connected by wobbly arrows, dashed lines, scribbles
+- Brainstorming session aesthetic
+
+【10 MODULES - NO COORDINATES】
+
+1. **LLM Foundations** - Model icons (GPT, Claude, Gemini), context window sizes
+2. **Agent Frameworks** - LangChain, AutoGen, CrewAI boxes
+3. **Memory Systems** - Database doodle, vector store icons
+4. **Tool Integration** - API connectors, search, calculator icons
+5. **Planning & Reasoning** - Flow charts, decision trees, CoT arrows
+6. **Multi-Agent Systems** - Multiple agent icons collaborating
+7. **Human Feedback** - Thumbs up/down, RLHF diagram
+8. **Deployment** - Cloud icons, Docker containers, server racks
+9. **Monitoring** - Dashboards, metrics, alert bells
+10. **Ethics & Safety** - Warning signs, guardrails, shield icons
+
+【TYPOGRAPHY】
+- ALL text: Irregular handwriting with varied size/angle
+- Subheadings: Thick + WHITE FINE-LINER tracing inside
+- Body: Scrawled, crossed-out words, ink bleeding
+- NO perfect fonts!
+
+【GRAPHIC ELEMENTS】
+- Lightning bolts ⚡, stars ⭐, arrows everywhere
+- Platform logos (messy versions)
+- Charts, graphs, connection lines
+- Cross-hatching shadows
+- Ink splatters and smudges
+
+【AVOID】
+- ❌ NO coordinate labels (A-01, B-05, etc.)
+- ❌ NO straight lines or perfect shapes
+- ❌ NO clean fonts or layouts
+
+Aspect Ratio: 3:4
+Include "模板 by WaytoAGI" in bottom-right corner.

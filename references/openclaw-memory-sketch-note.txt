@@ -1,0 +1,102 @@
+Create a highly chaotic, high-density, AUTHENTICALLY HAND-DRAWN Sketchnote style information guide on weathered, textured grid paper about "OpenClaw 记忆系统完全配置指南".
+
+=== CRITICAL VISUAL SYSTEM (MARKER & INK LOGIC) ===
+
+【COLOR PALETTE & TEXTURE】
+- BACKGROUND: Messy, classic notebook grid paper texture (off-white with subtle grid lines). Add organic imperfections like ink splatters, and smudges to increase the messy feel.
+- INK: Charcoal Black (#1A1A1A) with very raw, messy felt-tip marker and fine-liner pen textures. Include solid black blocks for reverse-text elements.
+- ACCENT COLOR: Vibrant Safety Orange (#FF7000) marker effect. Used for main title backgrounds, highlights, and thick directional arrows.
+
+【MAIN TITLE SPECIAL EFFECT - CRUCIAL】
+- The main overarching title "OpenClaw 记忆系统" must be written in thick black marker over a rough orange marker background block.
+- CRITICAL DETAIL: The thick black letters of the main title MUST feature thin, overlapping, scratchy WHITE FINE-LINER PEN lines tracing inside and around them, creating a messy, multi-layered highlight and re-traced effect.
+- Subtitle below: "三层架构 · 完整配置 · 梦境整理" in smaller scratchy handwriting.
+
+【LAYOUT & ORGANIC FLOW】
+- CHAOTIC & MODULAR: Organize information into 7 distinct but overlapping visual clusters.
+- Connect them with a highly messy, chaotic network of wobbly arrows, dashed paths, scribbles, and pointing lines.
+- Flow should feel like a brainstorming session captured on paper.
+
+【7 MODULES - HAND-DRAWN STYLE】
+
+【MOD 1: 三层架构对比】(Top-left, coordinate A-03)
+- Three stacked boxes with messy arrows between them
+- Top: "Active Memory" (实时检索) + lightning bolt icon
+- Middle: "memory-core" (存储 + 梦境) + database cylinder icon
+- Bottom: "Memory Wiki" (编译整理) + book/wiki icon
+- Handwritten note: "检索 → 存储 → 编译"
+
+【MOD 2: Active Memory 配置】(Top-right, coordinate B-08)
+- Messy code block with orange highlight:
+  "agents: [main, nick-wilde]"
+  "timeoutMs: 15000"
+  "queryMode: recent"
+- Red circled note: "每次回复前自动检索!"
+- Arrow pointing to MOD 1
+
+【MOD 3: memory-core 文件结构】(Middle-left, coordinate C-14)
+- Folder tree with messy lines:
+  ├─ MEMORY.md (长期记忆)
+  ├─ memory/2026-04-12.md (每日笔记)
+  └─ DREAMS.md (梦境报告)
+- Small doodle: sleeping face for dreams
+
+【MOD 4: Memory Wiki Bridge 模式】(Middle-right, coordinate D-19)
+- Two boxes connected by thick arrow:
+  [memory-core] ===bridge==> [Memory Wiki]
+- Checkmarks: ✅ readMemoryArtifacts ✅ indexDreamReports
+- Warning triangle: ⚠️ 不是替代，是补充层!
+
+【MOD 5: Dreaming 三阶段】(Center, coordinate E-23)
+- Horizontal flow with messy circles:
+  ☀️ Light → 🌙 REM → 🌑 Deep
+- Under each: "快速扫描" / "关联分析" / "深度整合"
+- Clock icon: "凌晨 3 点自动执行"
+
+【MOD 6: 完整配置代码】(Bottom-left, coordinate F-27)
+- Dense code block with scribbled borders:
+  "plugins.allow: [memory-core, active-memory, memory-wiki]"
+  "vaultMode: bridge"
+  "search.corpus: all"
+- Orange arrow: "复制到 openclaw.json!"
+
+【MOD 7: 验证命令】(Bottom-right, coordinate G-32)
+- Terminal-style box with messy border:
+  > openclaw gateway restart
+  > openclaw memory status --deep
+  > /verbose on
+- Checkmark doodle: ✅ 配置完成
+
+【TYPOGRAPHY - EXTREMELY RAW HANDWRITING】
+- MIXED, IRREGULAR HAND-DRAWN STYLES: All text must look highly irregular and human-made.
+- Module headers: Thick, scratchy lettering in orange marker
+- Body text: Authentic, heavily scrawled handwriting in black ink
+- Words must vary significantly in size, angle, and alignment
+- Include deliberate mistakes, crossed-out words (scribbled over), and messy ink bleeding
+- ABSOLUTELY NO PERFECT FONTS
+
+【GRAPHIC & SKETCH ELEMENTS】
+- MESSY DOODLES throughout:
+  - Brain icon 🧠 next to title
+  - Lightning bolts ⚡ for Active Memory
+  - Database cylinder for memory-core
+  - Book/wiki icon for Memory Wiki
+  - Sleep face 😴 for Dreaming
+  - Checkmarks ✅, warning triangles ⚠️
+  - Arrows in all directions (wobbly, uneven)
+- HATCHING SHADOWS: Use rough, frantic hand-drawn cross-hatching for drop shadows
+- RAW LINES: All strokes extremely wobbly, uneven, organically drawn
+- INK SPLATTERS: Random small ink dots and smudges throughout
+
+【AVOID】
+- ❌ NO clean digital fonts
+- ❌ NO straight lines or perfect shapes
+- ❌ NO clean, sterile layouts
+- ❌ NO machine-generated perfect alignment
+- ❌ NO flat vector icons
+- ❌ NO neon colors (only orange accent)
+
+Aspect Ratio: 3:4 (Portrait)
+Include small, scratchy handwritten text "模板 by WaytoAGI" in bottom-right corner.
+
+Style: Authentic messy brainstorming notebook page - like someone took rapid notes during a technical workshop while drinking too much coffee.

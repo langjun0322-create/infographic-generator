@@ -1,0 +1,92 @@
+Create a highly chaotic, high-density, AUTHENTICALLY HAND-DRAWN Sketchnote style information guide on weathered, textured grid paper about "DIGITAL MARKETING STRATEGIES".
+
+=== CRITICAL VISUAL SYSTEM (MARKER & INK LOGIC) ===
+
+【COLOR PALETTE & TEXTURE】
+- BACKGROUND: Messy, classic notebook grid paper texture (off-white with subtle grid lines). Add organic imperfections like ink splatters, and smudges to increase the messy feel.
+- INK: Charcoal Black (#1A1A1A) with very raw, messy felt-tip marker and fine-liner pen textures. Include solid black blocks for reverse-text elements.
+- ACCENT COLOR: Vibrant Safety Orange (#FF7000) marker effect. Used for main title backgrounds, highlights, and thick directional arrows.
+
+【MAIN TITLE SPECIAL EFFECT - CRUCIAL】
+- The main overarching title "DIGITAL MARKETING STRATEGIES" must be written in thick black marker over a rough orange marker background block.
+- CRITICAL DETAIL: The thick black letters of the main title MUST feature thin, overlapping, scratchy WHITE FINE-LINER PEN lines tracing inside and around them, creating a messy, multi-layered highlight and re-traced effect.
+
+【SUBTITLE EFFECT】
+- Subtitle: "Complete Guide 2026" with SAME white fine-liner pen tracing effect inside letters.
+
+【LAYOUT & ORGANIC FLOW】
+- CHAOTIC & MODULAR: Organize information into 7 distinct but overlapping visual clusters.
+- Connect them with a highly messy, chaotic network of wobbly arrows, dashed paths, scribbles, and pointing lines.
+
+【7 MODULES - HAND-DRAWN STYLE】
+
+【MOD 1: Content Marketing】(Top-left, coordinate A-03)
+- Messy box with orange highlight
+- Icons: pencil ✏️, blog post 📄, video camera 🎥
+- Handwritten notes: "Blog posts", "Videos", "Infographics"
+- Arrow pointing to MOD 2
+
+【MOD 2: Social Media Strategy】(Top-right, coordinate B-08)
+- Platform icons in messy circles: X/Twitter 🐦, Instagram , LinkedIn 
+- Orange circled note: "Post daily!"
+- Messy checklist: ✓ Engage ✓ Share ✓ Respond
+
+【MOD 3: SEO Fundamentals】(Middle-left, coordinate C-14)
+- Search bar doodle with magnifying glass 🔍
+- Key terms scribbled: "Keywords", "Backlinks", "Meta tags"
+- Warning triangle: ⚠️ Don't stuff keywords!
+
+【MOD 4: Email Marketing】(Middle-right, coordinate D-19)
+- Envelope icon ✉️ with messy lines
+- Stats box: "ROI: $42 per $1 spent"
+- Orange arrow: "Build your list!"
+
+【MOD 5: Paid Advertising】(Center, coordinate E-23)
+- Dollar signs 💰 in messy circles
+- Platform boxes: Google Ads, Facebook Ads, X Ads
+- Budget scale doodle: $ → $$ → $$$
+
+【MOD 6: Analytics & Metrics】(Bottom-left, coordinate F-27)
+- Messy chart with wobbly lines 📊
+- Key metrics: "CTR", "Conversion Rate", "ROI"
+- Checkmark: ✓ Track everything
+
+【MOD 7: Growth Hacks】(Bottom-right, coordinate G-32)
+- Lightning bolts ⚡ all over
+- Quick tips in scribbled boxes:
+  "A/B Test everything"
+  "Use urgency"
+  "Referral bonuses"
+- Star doodle: ⭐ Viral potential!
+
+【TYPOGRAPHY - EXTREMELY RAW HANDWRITING】
+- MAIN TITLE: Thick black marker with orange background + WHITE FINE-LINER PEN tracing inside letters
+- SUBTITLE: Same white fine-liner tracing effect
+- SUBHEADINGS: Thick, scratchy lettering with WHITE FINE-LINER PEN lines tracing inside
+- BODY TEXT: Authentic, heavily scrawled handwriting. Words vary in size, angle, alignment
+- Include crossed-out words, ink bleeding, deliberate mistakes
+- ABSOLUTELY NO PERFECT FONTS
+
+【GRAPHIC & SKETCH ELEMENTS】
+- MESSY DOODLES throughout:
+  - Lightning bolts ⚡, stars ⭐, checkmarks ✅
+  - Arrows in all directions (wobbly, uneven)
+  - Platform icons (X, Instagram, LinkedIn, etc.)
+  - Dollar signs 💰, charts 📊, envelopes ✉️
+  - Magnifying glass 🔍, pencils ✏️
+- HATCHING SHADOWS: Rough, frantic hand-drawn cross-hatching
+- RAW LINES: All strokes extremely wobbly, uneven, organic
+- INK SPLATTERS: Random small ink dots and smudges
+
+【AVOID】
+- ❌ NO clean digital fonts
+- ❌ NO straight lines or perfect shapes
+- ❌ NO clean, sterile layouts
+- ❌ NO machine-generated perfect alignment
+- ❌ NO flat vector icons
+- ❌ NO neon colors (only orange accent)
+
+Aspect Ratio: 3:4 (Portrait)
+Include small, scratchy handwritten text "模板 by WaytoAGI" in bottom-right corner.
+
+Style: Authentic messy brainstorming notebook page - like a marketing team's intense strategy session captured on paper.

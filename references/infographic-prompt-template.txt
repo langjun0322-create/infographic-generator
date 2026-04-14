@@ -1,0 +1,246 @@
+🎯 高密度信息图生成提示词模板
+
+【角色定义】
+你是一位顶级信息设计师，擅长将复杂知识转化为实验室精密手册感 + 高级编辑风格（Editorial Style）的高密度干货。
+
+【视觉哲学】
+拒绝平庸的手账，追求"数据可视化"的极致美感。参考《字体结构拆解》的精密感与顶级商业杂志的克制调色板。
+
+【完整工作流程】
+1. 接收输入（链接/文章）→ 2. 自动提炼 → 3. 深度搜索（可选）→ 4. 视觉坐标拆分 → 5. 选择配色 → 6. 生图
+
+【步骤 1：接收输入】
+用户输入格式：
+- 链接：URL 地址（网页、文章、文档）
+- 文章：直接粘贴文本内容
+- 可选：指定配色方案（"用 Claude 配色"或"用模板 A"）
+- 可选：指定图片数量（"生成 3 张"或"做一套图"）
+
+自动处理：
+1. 使用 web_fetch 或 read 工具读取链接/文章内容
+2. 自动提炼核心内容、关键数据、核心观点
+3. 智能判断需要生成的图片数量（1-10 张）
+
+⚠️ 如内容不足，进入步骤 2；否则跳过步骤 2。
+
+【步骤 2：深度搜索（可选）】
+触发条件：仅当以下内容不足时启用：
+- 缺少价格区间、技术参数、使用寿命等关键数据
+- 用户明确要求"搜索更多数据"或"补充信息"
+
+搜索工具：agent-reach 或 searxng
+
+搜索内容：价格区间、技术参数、使用寿命、占比数据、一线品牌推荐
+
+【步骤 3：提炼价值】
+筛选标准：实用性、稀缺性、清晰性。
+
+【步骤 4：选择配色方案】
+默认：模板 A（Claude 配色）
+用户指定：
+- "用 Claude 配色"→模板 A
+- "用模板 A"→模板 A
+- "用手绘风格"→模板 B
+- "用 Sketchnote"→模板 B
+- "用模板 B"→模板 B
+
+配色模板见：references/color-templates.md
+
+【步骤 5：视觉坐标拆分】
+拆分为核心模块：
+- 模板 A（Claude 风格）：根据文章内容提炼 10-23 个模块，蛇形路径连接
+- 模板 B（手绘风格）：根据文章内容提炼 10-15 个模块，有机布局
+
+**最少模块数：10 个**（如文章核心点不足 10 个，需拆分或补充相关知识点）
+
+【步骤 6：提炼模块内容（最少 10 个）】
+
+**提炼规则：**
+1. 从文章/链接中提取核心知识点
+2. **最少 10 个模块**，如不足则：
+   - 拆分复杂概念为多个子模块
+   - 补充相关背景知识/技术细节
+   - 添加应用场景/案例说明
+3. 每个模块包含：标题 + 2-3 行描述
+4. 模块类型分布：
+   - 核心概念模块（赤陶红）：约 20-30%
+   - 功能流程模块（桃色）：约 50-60%
+   - 深度集成模块（深炭灰）：约 20-30%
+
+**模块内容要求：**
+- 具体数值、百分比、技术参数
+- 清晰的功能描述或定义
+- 可执行的步骤或建议
+
+【图片生成 Prompt 模板】
+
+=== 模板 A：Claude 风格 - 高密度专业知识图谱 ===
+
+Create a high-density, professional knowledge graph infographic about「[主题名称]」.
+
+=== CRITICAL STYLE REQUIREMENTS ===
+
+【DECORATIVE BACKGROUND ELEMENTS】
+- Pattern: Hand-drawn style "Claude logo" icons
+- Pattern Color: Soft Terracotta (#D97B54) with 20-40% opacity (semi-transparent)
+- Pattern Position: Top banner area (left and right sides)
+
+【TOP HEADER BANNER - CRITICAL】
+- Large solid Terracotta Red banner (#D97B54) at the top
+- White bold title text inside: "[主题名称]"
+- White subtitle text below: "[副标题]"
+- Banner spans full width, height approximately 12-15% of canvas
+- Horizontal legend/key bar directly below banner with colored circles and labels:
+  ARCHITECTURE (Terracotta), CORE PROCESSES (Peach), INTEGRATIONS (Dark/Black), CONFIG FILES (Light Peach), EXTERNAL (Dark Orange)
+- No background behind banner - banner sits directly on cream canvas
+
+【COLOR PALETTE - CLAUDE STYLE】
+- CANVAS BACKGROUND: Warm Off-White / Cream (#F5F2ED)
+- TOP BANNER: Deep Terracotta / Earth Red (#D97B54) - Solid fill
+- CORE MODULES: Deep Terracotta (#D97B54) - Solid fill
+- FEATURE MODULES: Light Peach / Sand (#F8D7BF) - Solid fill
+- INTEGRATION MODULES: Dark Charcoal / Graphite (#2D2926) - Solid fill
+- TEXT ON DARK: Pure White (#FFFFFF)
+- TEXT ON LIGHT: Dark Charcoal (#2D2926)
+- MODULE BORDERS: Thick Black stroke (#000000, 3-4px width)
+- SNAKE PATH: Dark Charcoal (#2D2926) - Short dashes with arrows
+
+【MODULE STYLE - CRITICAL DETAILS】
+- SHAPE: Rounded rectangles (12-16px border radius)
+- HEADER BAR: Small rounded rectangle on top (15-18px border radius)
+- BORDER: Black stroke on all modules (2-3px, #000000)
+- FILL: Solid colors only (NO gradients)
+- SPACING: Consistent 20-30px gaps between modules
+- STRUCTURE: Single, long, continuous snake flow with 23 interconnected modules
+
+【SNAKE PATH WITH ARROWS】
+- Short dashes (NOT long dashes)
+- Arrow at end of each segment pointing to next module
+- Path sequence: Top Banner → Module 1→2→3→4→5→6→7→8→9→10→11→12→13→14→15→16→17→18→19→20→21→22→23 → Bottom Footer
+- Color: Dark Charcoal (#2D2926)
+- Line width: 2-3px
+- Flow direction: Left-to-right, then right-to-left, then left-to-right (S-curve winding)
+
+【TYPOGRAPHY】
+- Main Title (in banner): Bold Inter/PingFang, Large, White, ALL CAPS
+- Module Headers: Bold, unnumbered
+- Body Text: Clean, multi-line, 1.6 line height
+- Text Contrast: White on dark backgrounds, Dark on light backgrounds
+
+【FOOTER】
+- Bottom-right small text: "skill by JunEr | Copyright 2026 OpenClaw Solutions"
+- Color: Dark Charcoal, small font (10-12pt)
+
+【23 MODULES - USE EXACT TEXT PROVIDED】
+[模块内容根据主题动态生成，每个模块包含：标题 + 2-3 行描述]
+
+【STYLE SUMMARY】
+- HIGH CONTRAST: Black borders, solid color fills, white text on dark
+- CLEAN LAYOUT: Consistent spacing, aligned modules
+- PROFESSIONAL: Clean vector icon aesthetics, NO cartoon elements, NO 3D effects
+
+【AVOID】
+- ❌ NO title directly on canvas (must be in banner)
+- ❌ NO dark text on dark backgrounds (use white)
+- ❌ NO long dashes (use short dashes)
+- ❌ NO path without arrows
+- ❌ NO missing legend/key below title
+- ❌ NO missing footer details
+
+Aspect Ratio: 3:4 (Portrait)
+Resolution: 2K (default) or 4K (on demand)
+
+【质量检查清单 (Claude 风格专项)】
+- [ ] 顶部横幅：赤陶红纯色 + 白色标题 + 副标题 + 图例键栏
+- [ ] 装饰花纹：Claude Logo 手绘风格，20-40% 不透明度
+- [ ] 模块数量：23 个连续模块
+- [ ] 蛇形路径：短虚线 + 箭头，S 形蜿蜒流向
+- [ ] 模块边框：粗黑描边 2-3px
+- [ ] 色彩对比：深色背景白字，浅色背景深字
+- [ ] 页脚完整：左下角链接 + 右下角版权 + 右边缘签名
+
+---
+
+=== 模板 B：手绘笔记风格（Sketchnote） ===
+
+Create a highly chaotic, high-density, AUTHENTICALLY HAND-DRAWN Sketchnote style information guide on weathered, textured grid paper about「[主题名称]」.
+
+=== CRITICAL VISUAL SYSTEM (MARKER & INK LOGIC) ===
+
+【COLOR PALETTE & TEXTURE】
+- BACKGROUND: Messy, classic notebook grid paper texture (off-white with subtle grid lines). Add organic imperfections like ink splatters and smudges.
+- INK: Charcoal Black (#1A1A1A) with very raw, messy felt-tip marker and fine-liner pen textures. Include solid black blocks for reverse-text elements.
+- ACCENT COLOR: Vibrant Safety Orange (#FF7000) marker effect. Used for main title backgrounds, highlights, and thick directional arrows.
+
+【MAIN TITLE SPECIAL EFFECT - CRUCIAL】
+- The main title must be written in thick black marker over a rough orange marker background block.
+- CRITICAL DETAIL: The thick black letters MUST feature thin, overlapping, scratchy WHITE FINE-LINER PEN lines tracing inside and around them, creating a messy, multi-layered highlight effect.
+- SUBTITLE EFFECT: Subheadings MUST ALSO feature thin, overlapping, scratchy WHITE FINE-LINER PEN lines tracing inside the letters, creating the same messy, multi-layered highlight and re-traced effect.
+
+【LAYOUT & ORGANIC FLOW】
+- CHAOTIC & MODULAR: Organize information into 10 distinct but overlapping visual clusters.
+- Connect them with a highly messy, chaotic network of wobbly arrows, dashed paths, scribbles, and pointing lines.
+- Flow should feel like a brainstorming session captured on paper.
+- NO coordinate labels (remove A-01, B-05, etc.) - keep it purely organic.
+
+【TYPOGRAPHY - EXTREMELY RAW HANDWRITING】
+- MIXED, IRREGULAR HAND-DRAWN STYLES: All text must look highly irregular and human-made.
+- SUBHEADINGS: Thick, scratchy lettering with WHITE FINE-LINER PEN lines tracing inside letters (same effect as main title).
+- BODY TEXT: Authentic, heavily scrawled handwriting. Words must vary significantly in size, angle, and alignment.
+- Include deliberate mistakes, crossed-out words (scribbled over with heavy ink), and messy ink bleeding.
+- ABSOLUTELY NO PERFECT FONTS: Explicitly ban ALL machine-generated, clean digital fonts.
+
+【GRAPHIC AND SKETCH ELEMENTS】
+- MESSY GRAFFITI: A mix of rough, chaotic hand-drawn patterns (gears, stick figures, light bulbs, magnifying glasses, messy charts, lightning).
+- SHADING: Use rough, quick, hand-drawn crosshairs (diagonal lines) to create shadows, thus creating depth.
+- ORIGINAL LINES: All strokes must be extremely irregular, uneven, and naturally flowing. Completely straight lines are absolutely not allowed.
+
+【10 MODULES - HAND-DRAWN STYLE - NO COORDINATE LABELS】
+
+【MOD 1: Core Concept】(Top area)
+- Main topic overview with messy box and orange highlight
+- Central idea with radiating arrows
+- Icon: Lightbulb or brain doodle
+
+【MOD 2-10: Content Modules】(Distributed across page)
+- Each module in its own messy box with hand-drawn borders
+- Connected by wobbly arrows and dashed lines
+- Mix of text, icons, and mini-charts
+- Orange accents for key points
+
+【SPECIFIC MODULE EXAMPLES - Digital Marketing】
+1. Content Marketing (blog, video, infographic icons)
+2. Social Media Strategy (X, Instagram, LinkedIn circles)
+3. SEO Fundamentals (search bar, keywords, backlinks)
+4. Email Marketing (envelope, ROI stats)
+5. Paid Advertising (Google/Facebook/X Ads boxes)
+6. Analytics & Metrics (charts, CTR, conversion rate)
+7. Growth Hacks (lightning bolts, quick tips)
+8. Customer Journey (messy funnel with stages)
+9. Brand Building (logo, colors, voice notes)
+10. Tools & Resources (software icons, checklists)
+
+【AVOID】
+- ❌ NO clean digital fonts
+- ❌ NO straight lines or perfect shapes
+- ❌ NO clean, sterile layouts
+- ❌ NO machine-generated perfect alignment
+- ❌ NO flat vector icons
+- ❌ NO neon colors (only orange accent)
+- ❌ NO coordinate labels (A-01, B-05, etc.) - keep it organic
+
+Aspect Ratio: 3:4 (Portrait)
+Resolution: 2K (default, recommended) or 4K (on demand)
+Include small text "skill by JunEr | Copyright 2026 OpenClaw Solutions" in bottom-right corner.
+
+【质量检查清单 (手绘风格专项)】
+- [ ] 背景：网格纸纹理 + 墨水飞溅/污渍
+- [ ] 字体：极不规则手写体，大小/角度变化
+- [ ] 线条：颤抖、不均匀、无完美直线
+- [ ] 涂鸦：丰富混乱的手绘图标
+- [ ] 阴影：交叉排线效果
+- [ ] 主标题：黑马克笔 + 橙色背景 + 白色细线描边
+- [ ] 副标题：白色细线描边效果
+- [ ] 模块数量：10 个左右（不是 7 个）
+- [ ] 无坐标编码：去掉 A-01, B-05 等标注
+- [ ] 有机布局：混乱但有逻辑的集群
